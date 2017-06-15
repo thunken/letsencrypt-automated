@@ -48,8 +48,8 @@ sudo dpkg-reconfigure locales
 #### Config
 Put this content in "config" file in cd /opt/letsencrypt.sh/dehydrated, replace by the correct values.   
 ~~~
-CF_EMAIL='user@example.com'
-CF_KEY='K9uX2HyUjeWg5AhAb'
+export CF_EMAIL='user@example.com'
+export CF_KEY='K9uX2HyUjeWg5AhAb'
 ~~~
 
 ## One time usage (testing installation)
