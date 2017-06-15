@@ -31,6 +31,7 @@ cd /opt/letsencrypt.sh/dehydrated && ./dehydrated --register --accept-terms
 ### Letsencrypt Cloudflare hooks (skip if you don't use Cloudflare)
 #### Install
 ~~~
+cd /opt/letsencrypt.sh/dehydrated
 git clone https://github.com/kappataumu/letsencrypt-cloudflare-hook hooks/cloudflare
 sudo apt-get install build-essential libssl-dev libffi-dev python-dev
 pip install --upgrade pip
