@@ -24,7 +24,7 @@ To accept these terms of service run `./dehydrated --register --accept-terms`.
 
 So run the following to accept terms
 ~~~
-./dehydrated --register --accept-terms
+cd /opt/letsencrypt.sh/dehydrated && ./dehydrated --register --accept-terms
 ~~~
 
 
@@ -47,8 +47,8 @@ sudo dpkg-reconfigure locales
 #### Config
 Put this content in "config" file in cd /opt/letsencrypt.sh/dehydrated, replace by the correct values.   
 ~~~
-export CF_EMAIL='user@example.com'
-export CF_KEY='K9uX2HyUjeWg5AhAb'
+CF_EMAIL='user@example.com'
+CF_KEY='K9uX2HyUjeWg5AhAb'
 ~~~
 
 ## One time usage (testing installation)
