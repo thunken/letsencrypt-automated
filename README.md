@@ -3,7 +3,7 @@
 ## Dependencies
 Thanks to these really useful projects:
 - https://github.com/lukas2511/dehydrated
-- Cloudflarehttps://github.com/kappataumu/letsencrypt-cloudflare-hook
+- https://github.com/kappataumu/letsencrypt-cloudflare-hook
 
 ## Installation
 ### Base script
