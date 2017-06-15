@@ -1,6 +1,11 @@
 # Letsencrypt automated request and renewal (with cloudflare implementation).
-## Installation
 
+## Dependencies
+Thanks to these really useful projects:
+- https://github.com/lukas2511/dehydrated
+- Cloudflarehttps://github.com/kappataumu/letsencrypt-cloudflare-hook
+
+## Installation
 ### Base script
 #### Install
 ~~~
@@ -23,7 +28,7 @@ So run the following to accept terms
 ~~~
 
 
-### Letsencrypt Cloudflare hooks
+### Letsencrypt Cloudflare hooks (skip if you don't use Cloudflare)
 #### Install
 ~~~
 git clone https://github.com/kappataumu/letsencrypt-cloudflare-hook hooks/cloudflare
@@ -47,10 +52,14 @@ export CF_KEY='K9uX2HyUjeWg5AhAb'
 ~~~
 
 ## One time usage (testing installation)
+### With Cloudflare implementation
+cd /opt/letsencrypt.sh/dehydrated && ./dehydrated -f config -c -d <yourdomain.com> -d <sub1.yourdomain.com> -d <sub2.yourdomain.com> -t dns-01 -k 'hooks/cloudflare/hook.py' -o </your/certificates/path>   
+### Without Cloudflare implementation
 cd /opt/letsencrypt.sh/dehydrated && ./dehydrated -f config -c -d <yourdomain.com> -d <sub1.yourdomain.com> -d <sub2.yourdomain.com> -t dns-01 -k 'hooks/cloudflare/hook.py' -o </your/certificates/path>
 
 ## Now making an automatic renewal with cron
 Creating a script called by the crontab, add the following content to /opt/letsencrypt.sh/cron.sh
+Note: Remove "-k 'hooks/cloudflare/hook.py'" if you don't use Cloudflare
 ~~~
 #!/usr/bin/env bash
 
