@@ -38,6 +38,7 @@ pip install --upgrade pip
 pip install -r hooks/cloudflare/requirements-python-2.txt
 # Or for python 3
 pip install -r hooks/cloudflare/requirements.txt
+pip install pyopenssl
 ~~~
 
 Note: If you have any trouble installing requirements with pip   
