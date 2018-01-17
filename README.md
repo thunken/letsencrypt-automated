@@ -36,6 +36,8 @@ git clone https://github.com/kappataumu/letsencrypt-cloudflare-hook hooks/cloudf
 sudo apt-get install build-essential libssl-dev libffi-dev python-dev
 pip install --upgrade pip
 pip install -r hooks/cloudflare/requirements-python-2.txt
+# Or for python 3
+pip install -r hooks/cloudflare/requirements.txt
 ~~~
 
 Note: If you have any trouble installing requirements with pip   
