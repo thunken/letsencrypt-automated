@@ -4,6 +4,7 @@
 Thanks to these really useful projects:
 - https://github.com/lukas2511/dehydrated
 - https://github.com/kappataumu/letsencrypt-cloudflare-hook
+- https://letsencrypt.org off course
 
 ## Installation
 ### Base script
