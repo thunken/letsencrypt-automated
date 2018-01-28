@@ -84,3 +84,4 @@ Add this line in the crontab
 ~~~
 0 1 * * * /opt/letsencrypt.sh/cron.sh >> /var/log/letsencrypt.sh/cron.log 2>&1
 ~~~
+You will probably have to reload your http service right after.
