@@ -60,7 +60,7 @@ export CF_KEY='K9uX2HyUjeWg5AhAb'
 ### With Cloudflare implementation
 cd /opt/letsencrypt.sh/dehydrated && ./dehydrated -f config -c -d <yourdomain.com> -d <sub1.yourdomain.com> -d <sub2.yourdomain.com> -t dns-01 -k 'hooks/cloudflare/hook.py' -o </your/certificates/path>   
 ### Without Cloudflare implementation
-cd /opt/letsencrypt.sh/dehydrated && ./dehydrated -f config -c -d <yourdomain.com> -d <sub1.yourdomain.com> -d <sub2.yourdomain.com> -t dns-01 -k 'hooks/cloudflare/hook.py' -o </your/certificates/path>
+cd /opt/letsencrypt.sh/dehydrated && ./dehydrated -f config -c -d <yourdomain.com> -d <sub1.yourdomain.com> -d <sub2.yourdomain.com> -t dns-01 -o </your/certificates/path>
 
 ## Now making an automatic renewal with cron
 Creating a script called by the crontab, add the following content to /opt/letsencrypt.sh/cron.sh
